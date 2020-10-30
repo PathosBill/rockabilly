@@ -5,7 +5,7 @@
 
 This project is for a hands-on Museum exhibit kiosk that plays snippets of the early pioneers of the Rockabilly style.
 
-## Setting up the project
+## Setting up the project (in OS X)
 
 ## Install yarn
 
@@ -13,7 +13,7 @@ This project is for a hands-on Museum exhibit kiosk that plays snippets of the e
 brew install yarn
 ```
 
-## Install the dependencies
+## Install the dependencies 
 
 from within the root directory of the project run:
 
@@ -21,6 +21,15 @@ from within the root directory of the project run:
 yarn install
 ```
 
+## Setting up the project (in Windows)
+
+## Install Chocolatey (if needed)
+1. Open Powershell as administrator
+2. set execution policy to bypass for install process and install Chocolatey
+```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) ```
+3. Install Yarn
+```choco install yarn```
+4.
 ## Configure chrome for audio
 
 We have to setup our browser like this to allow sounds to playback without user interaction
@@ -45,6 +54,17 @@ yarn start
 yarn global add serve
 yarn serve -s build
 ```
+
+## Production build and server (Windows)
+1. Open GitBash
+2. 
+```yarn build
+yarn global add serve
+serve -s build
+```
+
+
+### having trouble 
 
 ## Setting up scheduled tasks on kiosk
 
